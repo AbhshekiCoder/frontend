@@ -6,7 +6,7 @@ import Sidebar from '../Components/Sidebar';
     const [message, setMessage] = useState('');
      const [input, setInput] = useState(''); 
      useEffect(() => { 
-        const ws = new WebSocket('ws://backend-c8l7.vercel.app');
+        const ws = new WebSocket('ws://backend-git-ioi-fvc7.vercel.app');
          ws.onopen = () => { 
             console.log('Connected to server'); 
         };
@@ -22,7 +22,7 @@ import Sidebar from '../Components/Sidebar';
         }; 
     }, []); 
     const sendMessage = (msg) => { 
-        const ws = new WebSocket('ws://backend-c8l7.vercel.app');
+        const ws = new WebSocket('ws://backend-git-ioi-fvc7.vercel.app');
          ws.onopen = () => { 
             ws.send(msg);
 
